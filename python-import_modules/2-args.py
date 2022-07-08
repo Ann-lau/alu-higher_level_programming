@@ -4,7 +4,7 @@ import sys
 
 def main():
     args = sys.argv[1:]
-    args-len = len(args)
+    args_len = len(args)
     if args_len == 0:
         print("0 arguments.")
     elif args_len == 1:
