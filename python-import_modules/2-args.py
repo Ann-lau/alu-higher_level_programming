@@ -12,7 +12,7 @@ def main():
     else:
         print("{:d} arguments:".format(args_len))
         for i in range(args_len):
-            print("{:d}: {}".format(I + 1, args[i]))
+            print("{:d}: {}".format(i + 1, args[i]))
 
 
 if __name__ == "__main__":
