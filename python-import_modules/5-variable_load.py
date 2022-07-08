@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-form variable_load_5 import a
+from variable_load_5 import a
 
 
 def main():
