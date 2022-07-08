@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    import variable_load_5 as extra
+form variable_load_5 import a
+
+
+def main():
+    print(a)
 
 
 if __name__ == "__main__":
