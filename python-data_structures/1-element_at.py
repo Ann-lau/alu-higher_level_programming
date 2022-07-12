@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 # Function that retrives an element from a list like in C
 def element_at(my_list, idx):
-    if (idx(-1)):
+    if idx < 0 or idx > len(my_list):
         return
-    if idx > len(my_list):
-        return
-    return my_list[idx]
+    return my_list(idx)
