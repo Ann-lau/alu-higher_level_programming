@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 # Replaces an element in a list without modifying the original list
 def new_in_list(my_list, idx, element):
-    if idx < 0 or idx >= len(my_list):
-        return my_list
+    if idx < 0:
+        c = my_list()
+        return c
+    elif idx >= len(my_list):
+        d = my_list()
+        return d
     else:
-        new_list = (my_list)
-        new_list[idx] = element
-        return new_list
+        v = my_list()
+        my_list[idx] = element
+        return v
 new_in_list(my_list, idx, element)
