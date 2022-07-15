@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-# Prints a matrix of integers
-def print_matrix_integer(matrix=[[]]):
+def print_matrix_integer(matrix=[[]]): # prints a matrix of integers
     for record in matrix:
         counter = 0
         for i in record:
