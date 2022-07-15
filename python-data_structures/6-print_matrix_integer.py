@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    for record in matrix:
-        counter = 0
-        for i in record:
-            if counter == (len(record) -1):
-                print("{:d}".format(i), end="")
+    for list_ in matrix:
+        if not list_:
+            print()
+        for item in list_:
+            if item == list_[-1]:
+                print('{:d}'.format(item))
             else:
-                print("{:d}".format(i), end=" ")
-                counter += 1
-                print("")
+                print('{:d}'.format(item), end=" ")
