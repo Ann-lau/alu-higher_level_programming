@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""6-square.py"""
+"""
+6-square.py
+"""
 
 
 class Square:
