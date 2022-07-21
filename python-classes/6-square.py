@@ -65,7 +65,7 @@ class Square:
                 print()
                 return
 
-            #print self.__position[1] new lines
+            # print self.__position[1] new lines
             for i in range(self.__position[1]):
                 print()
 
