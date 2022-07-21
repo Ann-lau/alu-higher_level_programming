@@ -5,9 +5,8 @@
 
 
 class Square:
-    """
-    Defines a square by:(based on 1-square.py)
-    """
+    """Defines a square"""
+
     def __init__(self size=0):
         """ Creates an instance of Square
         Args:
