@@ -1,4 +1,11 @@
 #!/usr/bin/python3
-class sqaure:
-    """ Defines a square. """
+"""
+0-square.py
+"""
+
+
+class square:
+    """
+    Defines a square
+    """
     pass
