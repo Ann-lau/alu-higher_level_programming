@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-class Square
+class sqaure:
+    """ Defines a square. """
     pass
