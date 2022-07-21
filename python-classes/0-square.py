@@ -4,7 +4,7 @@
 """
 
 
-class square:
+class Square:
     """
     Defines a square
     """
