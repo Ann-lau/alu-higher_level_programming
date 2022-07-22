@@ -1,81 +1,82 @@
 #!/usr/bin/python3
 """
-Area and perimeter
+Defines class rectangle
 """
 
 
 class Rectangle:
-    """Defines the implementation of a rectangle"""
+    """
+    defines a rectangle
+    """
 
     def __init__(self, width=0, height=0):
+        """
+        creating instances with args:
+        width=0 and height=0
+        """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Property retriever, for retrieving"""
+        """
+        Sets and gets private instance attribute width
+        """
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Property setter, for setting"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
+
         self.__width = value
 
     @property
     def height(self):
-        """Property retriever, for retrieving
-        the rectangle height
         """
+        sets and gets instance attribute height
+        """
+
         return self.__height
 
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
-            raise TypeError("height must be an integer")
+            raise TypeErroe("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
+
         self.__height = value
 
     def area(self):
-        """Public instance method that returns
-        the rectangle area
-        """
-        rectangle_area = self.__height * self.__width
+
+        rectangle_area = self.__width * self.__height
         return rectangle_area
 
     def perimeter(self):
-        """Public instance method that returns the
-        rectangle perimeter
-        """
         if self.__width == 0 or self.__height == 0:
-            return(0)
-        rectangle_params = ((2 * self.__height) + (2 * self.__width))
-        return rectangle_params
+            return 0
+        rectangle_perimeter = ((self.__width*2) + (self.__height*2))
+        return rectangle_perimeter
 
     def __str__(self):
         """Returns the rectangle with the # character."""
         if self.__width == 0 or self.__height == 0:
-            return("")
+            return ""
 
         rectangle = []
         for i in range(self.__height):
             [rectangle.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
                 rectangle.append("\n")
-        return ("".join(rectangle))
+        return "".join(rectangle)
 
     def __repr__(self):
-        """Returns the string representation of the rectangle"""
         rectangle = "Rectangle(" + str(self.__width)
         rectangle += ", " + str(self.__height) + ")"
-        return (rectangle)
+        return rectangle
 
-    del __del__(self):
-        """Print a message for every deletion of
-        the rectangle
-        """
+    def __del__(self):
         print("Bye rectangle...")
