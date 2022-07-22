@@ -73,4 +73,7 @@ class Rectangle:
         return (rectangle)
 
     del __del__(self):
+        """Print a message for every deletion of
+        the rectangle
+        """
         print("Bye rectangle...")
