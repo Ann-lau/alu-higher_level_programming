@@ -59,7 +59,7 @@ class Rectangle:
         return rectangle_params
 
     def __str__(self):
-        """Returns the rectangle with the # character"""
+        """Returns the rectangle with the # character."""
         if self.__width == 0 or self.__height == 0:
             return("")
 
