@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 6-square.py """
+"""6-square.py"""
 
 
 class Square:
@@ -31,37 +31,37 @@ class Square:
 
         self.__size = value
 
-     @property
-     def position(self):
-         """
-         Sets and gets the value of private position attribute
-            """
-         return self.__position
+    @property
+    def position(self):
+        """
+        Sets and gets the value of private position attribute
+        """
+        return self.__position
 
-     @position.setter
-     def position(self, value):
-         if not isinstance(value, tuple):
-                raise TypeError("position must be a tuple of 2 positive integers")
-         if len(value) != 2:
-                raise TypeError("position must be a tuple of 2 positive integers")
-         if not (isinstance(value[0], int) and isinstance(value[1], int)):
-                raise TypeError("position must be a tuple of 2 positive integers")
-         if not (value[0] >= 0 and value[1] >= 0):
-                raise TypeError("position must be a tuple of 2 positive integers")
+    @position.setter
+    def position(self, value):
+        if not isinstance(value, tuple):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not (isinstance(value[0], int) and isinstance(value[1], int)):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not (value[0] >= 0 and value[1] >= 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
 
-         self.__position = value
+        self.__position = value
 
-     def area(self):
-         """
-         Finds area of the square
-         """
-         return self.__size * self.__size
+    def area(self):
+        """
+        Finds area of the square
+        """
+        return self.__size * self.__size
 
-    def my_print(self):
-         """
-         Prints the square using # at correct position
-         """
-         if self.__size == 0:
+    def my-print(self):
+        """
+        Prints the square using # at correct position
+        """
+        if self.__size == 0:
              print()
              return
 
@@ -70,4 +70,4 @@ class Square:
             print()
 
         for i in range(self.__size):
-            print(" " * self.__position[0] + '#' * self.__size)
+            print(" " * self.__position[0] = '#' * self.__size)
