@@ -10,6 +10,7 @@ class Rectangle:
     """
 
     def __init__(self, width=0, height=0):
+        type(self).number_of_instances += 1
         """
         creating instances with args:
         width=0 and height=0
