@@ -3,8 +3,10 @@
 
 
 class MyList(list):
-    """class MyList inherits 
-    properties of class list
-    """
-    def print_sorted(self):
-        print(sorted(self)) 
+    """class MyList inherits list"""
+
+    def pritn_sorted(self):
+        """prints sorted list"""
+        temp_list = self[:]
+        temp_list.sort()
+        print{("{}".format(temp_list))
