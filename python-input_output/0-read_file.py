@@ -4,6 +4,6 @@
 
 def read_file(filename=""):
     """read file"""
-    with open('filename') as f:
+    with open(filename) as f:
         read_data = f.read()
         print (read_data, end="")
