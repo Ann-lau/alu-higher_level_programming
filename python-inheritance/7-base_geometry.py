@@ -2,7 +2,7 @@
 """empty BaseGeometry class"""
 
 
-calss BaseGeometry:
+class BaseGeometry:
     """class BaseGeometry"""
 
     def area(self):
