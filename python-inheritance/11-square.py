@@ -20,7 +20,6 @@ class Square(Rectangle):
     def __str__(self):
         return str("[Square] {}/{}".format(self.__size, self.__size))
 
-
     if __name__ == '__main__':
         s = Square(13)
 
