@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
- returns a list of lists of integer
- representing the Pascal’s triangle of n:
- """
+returns a list of lists of integer
+representing the Pascal’s triangle of n:
+"""
 
 
  def pascal_triangle(n):
