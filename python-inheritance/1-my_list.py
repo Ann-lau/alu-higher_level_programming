@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """class Mylist that inherits from list"""
+MyList = __import__('1-my_list').MyList
 
 
 class MyList(list):
