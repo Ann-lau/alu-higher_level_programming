@@ -5,19 +5,19 @@ import sys
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        arg = sys.argv[1]
-    else:
-        arg = ""
-        payload = {'q': arg}
-        url = "http://0.0.0.0:5000/search_user"
-        r = requests.post(url, data=payload)
-        try:
-            r.raise_for_status()
-            json = r.json()
-            if len(json) == 0:
-                print("No result")
-            else:
-                print("[{:d}] {}".format(json['id'], json['name']))
-        except Exception:
-            print("Not a valid JSON")
+    data = {"q": ""}
+
+    try:
+        data['q'] = [sys.argv[1]]
+    except:
+        pass
+    req = requests.post('http://0.0.0.0:5000/search_user', data)
+
+    try:
+        json_1 = req.json()
+        if not json_1:
+            print("No result")
+        else:
+            print("[{}] {}".format(json_1.get('id'), json_1.get('name')))
+    except:
+        print("Not a valid JSON")
