@@ -1,6 +1,6 @@
 -- creates a table
-CREATE TABLE if not exists first_table 
+CREATE TABLE if not exists first_table
 (
 	id INT
 	name VARCHAR(256)
-)
+);
