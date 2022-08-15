@@ -1,19 +1,24 @@
 #!/usr/bin/python3
-""""Doc"""
+"""function that prints a text with 2 new lines
+after each of these characters: ., ? and :"""
 
 
 def text_indentation(text):
-    """"Doc"""
-    if not isinstance(text, (str,)):
+    """function"""
+    if type(text) is not str:
         raise TypeError("text must be a string")
-
-    characters = ['.', '?', ':']
-    for i in range(len(text)):
-        if text[i] in characters:
-            try:
-                if text[i + 1] == " ":
-                    text = text[:i + 1] + text[i + 2:]
-                text = text[:i + 1] + "\n\n" + text[i + 1:]
-            except IndexError:
-                pass
-    print("{}".format(text), end="")
+    delim = ['.', '?', ':']
+    aux = 0
+    for i in text:
+        if aux == 0:
+            if i == ' ':
+                continue
+            else:
+                print("{}".format(i), end="")
+                aux = 1
+        else:
+            if i in delim:
+                print("{}".format(i), end="\n\n")
+                aux = 0
+            else:
+                print("{}".format(i), end="")
