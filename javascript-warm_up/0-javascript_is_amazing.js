@@ -1,3 +1,3 @@
 #!/usr/bin/node
-let myVar = "JavaScript is amazing";   // This is my first JavaScript code
+let myVar = "JavaScript is amazing"; 
 console.log(myVar);
