@@ -1,4 +1,4 @@
-#!/ur/bin/node
+#!/usr/bin/node
 const args = require('process').argv;
 const argPassed = args.slice(2, 3);
 let checkNaN = Number(argPassed);
